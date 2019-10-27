@@ -10,6 +10,7 @@ django = "*"
 load = "*"
 joblib = "*"
 sklearn = "*"
+gunicorn = "*"
 
 [requires]
 python_version = "3.7"
