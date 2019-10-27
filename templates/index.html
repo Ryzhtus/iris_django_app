@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    
+    <!-- django tag to add static files --> 
+    {% load static %}
+
+    <link rel='stylesheet' href={% static "styles/styles.css" %}>
+</head>
+<body>
+    <div class="center">
+        <h1>Iris Prediction App</h1>
+
+        <img src={% static "images/iris_picture.jpg" %}>
+
+        <h2>Enter measured characteristics</h2>
+        <form method='POST'>
+            {% csrf_token %}
+            <div>
+                {{ form.as_p }}
+            </div>
+            <input type="submit" value="Predict">
+        </form>
+    </div>
+</body>

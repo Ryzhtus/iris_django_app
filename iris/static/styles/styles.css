@@ -1,0 +1,15 @@
+body {
+    font-family: sans-serif;
+    font-weight: lighter;
+}
+
+.center {
+    width: auto;
+    margin: auto;
+    text-align: center;
+}
+
+img {
+    max-width: 40%;
+    max-height: 40%;
+}
