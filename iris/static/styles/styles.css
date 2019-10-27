@@ -13,3 +13,44 @@ img {
     max-width: 40%;
     max-height: 40%;
 }
+
+.form-group-row {
+    padding-top: 1%;
+    background-color: lightgrey;
+    width: 40%;
+    margin: auto;
+}
+
+.slider-8cm {
+    horiz-align: center;
+}
+
+.form-control {
+    width: 90%;
+    horiz-align: center;
+}
+
+.form-group-row-2 {
+    background-color: lightgrey;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    width: 40%;
+    margin: auto;
+}
+
+#petal_width_output {
+    padding-bottom: 1%;
+}
+
+.predict_input {
+    margin-top: 1%;
+    background-color: #1561fe;
+    color: white;
+    width: 40%;
+    height: 40px;
+}
+
+
+.result-text {
+    text-align: center;
+}

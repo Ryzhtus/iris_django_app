@@ -1,4 +1,6 @@
 from django.shortcuts import render
+from django.http import HttpResponse
+from django import forms
 from .forms import IrisForm
 from .ml_model.ml_classifier import predict, string_category
 
@@ -15,7 +17,7 @@ def index(request):
                              model_path='iris/ml_model/model.joblib')
         category = string_category(prediction)
         parameters_form = IrisForm()
-        result = 'Looks like is\'s ' + category
+        result = str(category)
         return render(request, 'index.html', {'form': parameters_form, 'result': result})
     else:
         parameters_form = IrisForm()
