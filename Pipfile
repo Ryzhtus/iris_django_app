@@ -7,6 +7,9 @@ verify_ssl = true
 
 [packages]
 django = "*"
+load = "*"
+joblib = "*"
+sklearn = "*"
 
 [requires]
 python_version = "3.7"
